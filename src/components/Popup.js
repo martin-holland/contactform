@@ -6,11 +6,13 @@ function Popup(props) {
       <div className="closewrapper">
         <button id="close">X</button>
       </div>
-      <p>Firstname: {props.firstname}</p>
-      <p>Lastname: {props.lastname}</p>
-      <p>Phone Number: {props.telnumber}</p>
-      <p>Message: {props.message}</p>
-      <p>Role: {props.role}</p>
+      <div className="popup-content">
+        <p>Firstname: {props.firstname}</p>
+        <p>Lastname: {props.lastname}</p>
+        <p>Phone Number: {props.telnumber}</p>
+        <p>Message: {props.message}</p>
+        <p>Role: {props.role}</p>
+      </div>
     </div>
   );
 }

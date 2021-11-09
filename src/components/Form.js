@@ -3,57 +3,56 @@ import React from "react";
 function Form(props) {
   return (
     <div className="formwrapper">
-      <form>
-        <div>
+      <h2>Input Form</h2>
+      <form onSubmit={props.submit}>
+        <div className="formdiv">
           <label htmlFor="firstname">First Name</label>
-          <input
-            id="firstname"
-            name="firstname"
-            type="text"
-            required
-            onChange={props.change}
-          />
-        </div>
-        <div>
+          <div>
+            <input
+              id="firstname"
+              name="firstname"
+              type="text"
+              required
+              onChange={props.change}
+            />
+          </div>
           <label htmlFor="lastname">Last Name</label>
-          <input
-            id="lastname"
-            name="lastname"
-            type="text"
-            required
-            onChange={props.change}
-          />
-        </div>
-        <div>
+          <div>
+            <input
+              id="lastname"
+              name="lastname"
+              type="text"
+              required
+              onChange={props.change}
+            />
+          </div>
           <label htmlFor="telnumber">Telephone Number</label>
-          <input
-            id="telnumber"
-            name="telnumber"
-            type="tel"
-            required
-            onChange={props.change}
-          />
-        </div>
-        <div>
+          <div>
+            <input
+              id="telnumber"
+              name="telnumber"
+              type="tel"
+              required
+              onChange={props.change}
+            />
+          </div>
           <label htmlFor="message">Message</label>
-          <textarea
-            id="message"
-            name="message"
-            required
-            onChange={props.change}
-          />
-        </div>
-        <div className="selectbox">
+          <div>
+            <textarea
+              id="message"
+              name="message"
+              required
+              onChange={props.change}
+            />
+          </div>
           <label htmlFor="role">Role</label>
           <select id="role" name="role" required onChange={props.change}>
             <option value="teacher">Teacher</option>
             <option value="student">Student</option>
             <option value="other">Other</option>
           </select>
+          <input type="submit" name="showpopup" value="Send" />
         </div>
-        <button name="showpopup" onClick={props.showpopup}>
-          Send
-        </button>
       </form>
     </div>
   );

@@ -21,26 +21,25 @@ class App extends Component {
     });
   };
 
-  showPopup = (event) => {};
+  showPopup = (e) => {
+    e.preventDefault();
+    this.setState({
+      showPopup: true,
+    });
+  };
   render() {
+    const props = {
+      firstname: this.state.firstname,
+      lastname: this.state.lastname,
+      message: this.state.message,
+      role: this.state.role,
+      telnumber: this.state.telnumber,
+    };
     return (
-      <div>
-        <Form change={this.changeHandler} />
-        <View
-          firstname={this.state.firstname}
-          lastname={this.state.lastname}
-          telnumber={this.state.telnumber}
-          message={this.state.message}
-          role={this.state.role}
-        />
-        <Popup
-          showpopup={this.showPopup}
-          firstname={this.state.firstname}
-          lastname={this.state.lastname}
-          telnumber={this.state.telnumber}
-          message={this.state.message}
-          role={this.state.message}
-        />
+      <div className="main">
+        {this.state.showPopup && <Popup {...props} />}
+        <Form change={this.changeHandler} submit={this.showPopup} />
+        <View {...props} />
       </div>
     );
   }

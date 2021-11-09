@@ -29,7 +29,7 @@ Set up with npm install, no additional dependancies required.
 
 ## Screenshots
 
-![alt text](contactform-main?raw=true "Main Contact form page image")
+![alt text](https://github.com/martin-holland/contactform/blob/main/contactform-main.png "Main Contact form page image")
 
 ## Sources
 

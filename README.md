@@ -30,7 +30,6 @@ Set up with npm install, no additional dependancies required.
 ## Screenshots
 
 ![alt text](contactform-main?raw=true "Main Contact form page image")
-![alt text](contactform-popup?raw=true "Popup image")
 
 ## Sources
 

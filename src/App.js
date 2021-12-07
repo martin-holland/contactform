@@ -36,11 +36,11 @@ class App extends Component {
       telnumber: this.state.telnumber,
     };
     return (
-      <div className="main">
+      <main>
         {this.state.showPopup && <Popup {...props} />}
         <Form change={this.changeHandler} submit={this.showPopup} />
         <View {...props} />
-      </div>
+      </main>
     );
   }
 }

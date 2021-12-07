@@ -41,26 +41,34 @@ h1 {
   border-radius: 10px;
   padding: 20px 0px;
   font-size: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .formwrapper h2 {
   padding: 10px;
 }
 
+form {
+  width: 40vw;
+}
+
 .formwrapper input[type="submit"] {
   background-color: var(--button-main);
+  color: white;
   border: none;
-  height: 30px;
+  height: 3rem;
   margin-top: 10px;
   border-radius: 5px;
 }
 
-.formdiv {
-  width: 40vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex;
+.formwrapper input[type="submit"]:hover {
+  background-color: var(--button-hover);
+  color: white;
+}
+
+.formwrapper select {
+  width: 100%;
 }
 
 .formwrapper input,
@@ -91,11 +99,10 @@ textarea {
 .viewform {
   display: flex;
   flex-direction: column;
-  background-color: #f5f5f5;
   width: 50vw;
   height: auto;
   margin: 0 auto;
-  padding: 0;
+  margin-top: 3.5rem;
 }
 
 .viewform h2 {
@@ -109,6 +116,7 @@ textarea {
   width: 400px;
   font-family: courier, monospace;
   border: 1px solid #dedede;
+  background-color: white;
 }
 
 .list li {
@@ -143,12 +151,13 @@ textarea {
 }
 
 .lines {
+  background-color: white;
   border-left: 1px solid #ffaa9f;
   border-right: 1px solid #ffaa9f;
   width: 2px;
   float: left;
   height: auto;
-  margin-left: 40px;
+  margin-left: 20px;
 }
 
 .popup {
@@ -158,7 +167,7 @@ textarea {
   align-items: center;
   background-color: rgb(96, 95, 95, 0.8);
   width: 120vw;
-  height: 120vh;
+  height: 200vh;
   position: absolute;
   overflow: hidden;
 }
@@ -211,4 +220,23 @@ textarea {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.formarea {
+  display: flex;
+  background-color: var(--bg-main)
+}
+
+.notesarea {
+  margin: 10px;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  border: solid var(--button-hover) 2px; 
+}
+
+.notes {
+  padding: 20px;
 }

@@ -4,16 +4,16 @@ const closeHandler = () => {
   window.location.reload();
 };
 
-function Popup(props) {
+function Popup({firstname, lastname, telnumber, message, role}) {
   return (
     <div className="popup">
       <div className="popup-content">
         <h2>This was your input, please verify</h2>
-        <p>Firstname: {props.firstname}</p>
-        <p>Lastname: {props.lastname}</p>
-        <p>Phone Number: {props.telnumber}</p>
-        <p>Message: {props.message}</p>
-        <p>Role: {props.role}</p>
+        <p>Firstname: {firstname}</p>
+        <p>Lastname: {lastname}</p>
+        <p>Phone Number: {telnumber}</p>
+        <p>Message: {message}</p>
+        <p>Role: {role}</p>
         <div className="confirmbuttons">
           <button id="confirm" className="confirm" onClick={closeHandler}>
             Yes, I am sure

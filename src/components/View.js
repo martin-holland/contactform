@@ -3,7 +3,6 @@ import React from "react";
 function View(props) {
   return (
     <div className="viewform">
-      <h2>This is your input</h2>
       <div className="lines">
         <ul className="list">
           <li>

@@ -1,0 +1,28 @@
+{
+  "notes": [
+    {
+      "id": 1,
+      "firstname": "Martin",
+      "lastname": "Holland",
+      "telnumber": "123456789",
+      "message": "Some really important Message",
+      "role": "student"
+    },
+    {
+      "id": 2,
+      "firstname": "Matt",
+      "lastname": "River",
+      "telnumber": "0001230000",
+      "message": "A different message",
+      "role": "teacher"
+    },
+    {
+      "id": 3,
+      "firstname": "Jane",
+      "lastname": "Smith",
+      "telnumber": "987654321",
+      "message": "Janes new message",
+      "role": "student"
+    }
+  ]
+}
